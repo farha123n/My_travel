@@ -1,0 +1,82 @@
+
+:root{
+    --primary-color:#FF5400;
+    --secondary-color:#131318;
+    --font-weight-1:900;
+    --font-weight-2:800;
+    --font-weight-3:700;
+    --font-weight-4:400;
+}
+*{
+    font-family: Mulish;
+}
+header{
+
+    margin:40px 140px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.primary{
+    color:var(--primary-color);
+}
+.secondary{
+    color:var(--secondary-color)
+}
+.nav-header{
+ font-size: 2.25rem;
+ font-weight: var(--font-weight-2);
+}
+.nav-title{
+    
+  display: flex;
+
+}
+.nav-list{
+
+    padding-left: 3rem;
+    list-style: none;
+    display: flex;
+ 
+    
+}
+.nav-list ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    
+
+}
+.nav-list ul li a{
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+.line{
+    width: 50px;
+    height: 1px;
+    background-color: var(--secondary-color);
+}
+
+#btn{
+    border: none;
+    background-color: transparent;
+    visibility: hidden;
+}
+@media screen and (max-width:600px) {
+    #btn{
+        visibility: visible;
+    }
+    .visible{
+        display: none;
+    }
+    header{
+        margin:0px
+    }
+    .nav-list{
+        padding-left: 10px;
+    }
+    
+}
